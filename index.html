@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>物流・運送業向け 無料個別相談お申し込み｜株式会社スケッチ</title>
+<meta name="description" content="物流・運送業の企業を対象に、人材育成・定着、働きがいづくり、管理職と現場の関わり方について相談できる無料個別相談（先着3社）のお申し込みフォームです。">
+<meta name="robots" content="noindex">
+<meta property="og:title" content="物流・運送業向け 無料個別相談お申し込み｜株式会社スケッチ">
+<meta property="og:description" content="採用の次の課題「育成」と「働きがい」。物流・運送業の企業向け、オンライン60分の無料個別相談（先着3社）。">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ink:#1d2433;
+    --sub:#5b6475;
+    --line:#d9dde5;
+    --bg:#f4f5f7;
+    --card:#ffffff;
+    --accent:#24476f;
+    --accent-dark:#1a3554;
+    --accent-soft:#e7edf5;
+    --req:#c8402f;
+    --ok:#2c7a4b;
+    --warn-bg:#fdf3e7;
+    --warn:#8a5a14;
+  }
+  *{box-sizing:border-box}
+  body{
+    margin:0;background:var(--bg);color:var(--ink);
+    font-family:"Noto Sans JP",system-ui,-apple-system,"Hiragino Sans",sans-serif;
+    line-height:1.8;font-size:16px;
+  }
+  .wrap{max-width:760px;margin:0 auto;padding:0 16px}
+
+  header.hero{background:var(--accent);color:#fff;padding:48px 0 40px}
+  .hero .eyebrow{font-size:13px;letter-spacing:.12em;opacity:.85;margin:0 0 8px}
+  .hero h1{font-size:clamp(24px,5vw,32px);line-height:1.4;margin:0 0 12px;font-weight:700}
+  .hero p{margin:0;opacity:.92;font-size:15px}
+  .nb{display:inline-block}
+  .badge{display:inline-block;background:#fff;color:var(--accent);font-weight:700;font-size:13px;
+    padding:3px 12px;border-radius:999px;margin-bottom:14px}
+
+  .card{background:var(--card);border-radius:12px;padding:24px;margin-bottom:24px;
+    box-shadow:0 2px 12px rgba(20,30,60,.06)}
+  .summary{margin-top:-20px}
+  .summary h2{font-size:17px;margin:0 0 12px}
+  .summary dl{display:grid;grid-template-columns:7em 1fr;gap:6px 12px;margin:0;font-size:15px}
+  .summary dt{color:var(--sub);font-weight:500}
+  .summary dd{margin:0}
+  .summary .free{color:var(--req);font-weight:700}
+  .notes{margin:16px 0 0;padding:12px 14px;background:var(--warn-bg);color:var(--warn);border-radius:8px;font-size:13px;line-height:1.7}
+  .notes p{margin:0}
+
+  form h2{font-size:19px;margin:0 0 4px}
+  .lead{color:var(--sub);font-size:14px;margin:0 0 24px}
+
+  .field{margin-bottom:22px}
+  .field > label,.field > .label{display:block;font-weight:700;font-size:15px;margin-bottom:6px}
+  .req,.opt{font-size:11px;font-weight:700;padding:1px 7px;border-radius:4px;margin-left:8px;vertical-align:2px}
+  .req{background:var(--req);color:#fff}
+  .opt{background:#e6e8ec;color:var(--sub)}
+  .hint{font-size:13px;color:var(--sub);margin:2px 0 6px}
+
+  input[type=text],input[type=email],input[type=tel],select,textarea{
+    width:100%;font:inherit;font-size:16px;color:var(--ink);background:#fff;
+    border:1px solid var(--line);border-radius:8px;padding:11px 12px;
+    transition:border-color .15s, box-shadow .15s;
+  }
+  textarea{min-height:130px;resize:vertical}
+  input:focus,select:focus,textarea:focus{outline:none;border-color:var(--accent);box-shadow:0 0 0 3px var(--accent-soft)}
+  .row2{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+
+  .checks{display:grid;grid-template-columns:1fr;gap:8px}
+  .checks label{display:flex;gap:10px;align-items:flex-start;font-weight:400;font-size:15px;
+    border:1px solid var(--line);border-radius:8px;padding:10px 12px;cursor:pointer;background:#fff}
+  .checks label:has(input:checked){border-color:var(--accent);background:var(--accent-soft)}
+  .checks input{margin-top:6px;accent-color:var(--accent);flex-shrink:0}
+
+  .agree{background:var(--bg);border-radius:8px;padding:14px 16px;font-size:14px}
+  .agree label{display:flex;gap:10px;align-items:flex-start;cursor:pointer;font-weight:500}
+  .agree input{margin-top:6px;accent-color:var(--accent);flex-shrink:0}
+  .agree a{color:var(--accent)}
+
+  .hp{position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden}
+
+  button[type=submit]{
+    display:block;width:100%;max-width:360px;margin:28px auto 0;font:inherit;font-weight:700;font-size:17px;
+    background:var(--accent);color:#fff;border:none;border-radius:999px;padding:15px 24px;cursor:pointer;
+    transition:background .15s, transform .1s;
+  }
+  button[type=submit]:hover{background:var(--accent-dark)}
+  button[type=submit]:active{transform:translateY(1px)}
+  button[type=submit]:disabled{opacity:.6;cursor:wait}
+
+  .error-msg{color:var(--req);font-size:14px;text-align:center;margin:14px 0 0;display:none}
+
+  .thanks{display:none;text-align:center;padding:40px 24px}
+  .thanks .check{width:56px;height:56px;border-radius:50%;background:var(--ok);color:#fff;font-size:30px;
+    display:flex;align-items:center;justify-content:center;margin:0 auto 16px}
+  .thanks h2{font-size:21px;margin:0 0 12px}
+  .thanks p{margin:0 0 8px;color:var(--sub);font-size:15px;text-align:left}
+  .thanks .btn{display:inline-block;margin-top:18px;color:var(--accent);font-weight:700}
+
+  footer{text-align:center;font-size:13px;color:var(--sub);padding:16px 0 40px}
+  footer a{color:var(--sub)}
+
+  @media (max-width:560px){
+    .row2{grid-template-columns:1fr}
+    .summary dl{grid-template-columns:1fr;gap:0}
+    .summary dd{margin-bottom:8px}
+    .card{padding:22px 18px}
+  }
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="wrap">
+    <span class="badge">先着3社限定・無料</span>
+    <p class="eyebrow">FOR LOGISTICS &amp; TRANSPORT COMPANIES</p>
+    <h1><span class="nb">物流・運送業の企業向け</span><br><span class="nb">無料個別相談</span><span class="nb">お申し込みフォーム</span></h1>
+    <p>採用の次に見えてくる「育成」と「働きがい」の課題について、スケッチ執行役員・平田 郁が個別にお話を伺います。</p>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <section class="card summary" aria-label="無料個別相談の概要">
+    <h2>無料個別相談の概要</h2>
+    <dl>
+      <dt>対象</dt><dd>物流・運送業の企業</dd>
+      <dt>相談内容</dt><dd>人材育成・定着、働きがいづくり、管理職と現場の関わり方など</dd>
+      <dt>形式</dt><dd>オンライン（60分）</dd>
+      <dt>募集社数</dt><dd>先着3社</dd>
+      <dt>開始日</dt><dd>2026年11月2日</dd>
+      <dt>費用</dt><dd class="free">無料</dd>
+    </dl>
+    <div class="notes">
+      <p>※先着3社に達した時点で受付を終了します。</p>
+    </div>
+  </section>
+
+  <form class="card" id="apply-form" action="https://formspree.io/f/xkjjzlwy" method="POST" novalidate>
+    <h2>お申し込み内容</h2>
+    <p class="lead">お申し込み内容を確認のうえ、担当者より日程調整のご連絡をメールでお送りします。</p>
+
+    <input type="hidden" name="_subject" value="【物流・運送業 無料個別相談】新規お申し込み">
+    <div class="hp" aria-hidden="true">
+      <label>この欄は入力しないでください<input type="text" name="_gotcha" tabindex="-1" autocomplete="off"></label>
+    </div>
+
+    <div class="field">
+      <label for="company">会社名<span class="req">必須</span></label>
+      <input type="text" id="company" name="会社名" autocomplete="organization" required>
+    </div>
+
+    <div class="field">
+      <label for="name">お名前<span class="req">必須</span></label>
+      <input type="text" id="name" name="お名前" autocomplete="name" placeholder="例）山田 太郎" required>
+    </div>
+
+    <div class="field">
+      <label for="employees">従業員数<span class="req">必須</span></label>
+      <select id="employees" name="従業員数" required>
+        <option value="">選択してください</option>
+        <option>1〜29名</option>
+        <option>30〜49名</option>
+        <option>50〜99名</option>
+        <option>100〜299名</option>
+        <option>300名以上</option>
+      </select>
+    </div>
+
+    <div class="row2">
+      <div class="field">
+        <label for="email">メールアドレス<span class="req">必須</span></label>
+        <input type="email" id="email" name="email" autocomplete="email" placeholder="例）info@example.co.jp" required>
+      </div>
+      <div class="field">
+        <label for="tel">電話番号<span class="req">必須</span></label>
+        <input type="tel" id="tel" name="電話番号" autocomplete="tel" placeholder="例）03-1234-5678" required>
+      </div>
+    </div>
+
+    <div class="field">
+      <label for="message">ご相談内容<span class="opt">任意</span></label>
+      <p class="hint">現在の状況や、相談で特にお話ししたいことがあればご記入ください。</p>
+      <textarea id="message" name="ご相談内容"></textarea>
+    </div>
+
+    <div class="agree">
+      <label>
+        <input type="checkbox" id="privacy" name="個人情報の取り扱い" value="同意する" required>
+        <span><a href="https://sketch-consulting.co.jp/privacy/" target="_blank" rel="noopener">個人情報の取り扱い</a>に同意する<span class="req">必須</span></span>
+      </label>
+    </div>
+
+    <button type="submit" id="submit-btn">無料個別相談に申し込む</button>
+    <p class="error-msg" id="error-msg" role="alert"></p>
+  </form>
+
+  <section class="card thanks" id="thanks" aria-live="polite">
+    <div class="check">✓</div>
+    <h2>お申し込みありがとうございました</h2>
+    <p>物流・運送業向け無料個別相談のお申し込みを受け付けました。</p>
+    <p>お申し込み内容を確認のうえ、担当者よりご登録のメールアドレス宛てに日程調整のご連絡をお送りします。</p>
+    <p>※先着3社に達していた場合は、その旨をご連絡いたします。あらかじめご了承ください。</p>
+    <a class="btn" href="https://sketch-consulting.co.jp/">株式会社スケッチ トップページへ →</a>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    運営：<a href="https://sketch-consulting.co.jp/" target="_blank" rel="noopener">株式会社スケッチ</a>（人と組織の変革支援）
+  </div>
+</footer>
+
+<script>
+(function () {
+  var form = document.getElementById('apply-form');
+  var btn = document.getElementById('submit-btn');
+  var err = document.getElementById('error-msg');
+  var thanks = document.getElementById('thanks');
+  var label = btn.textContent;
+
+  function showError(msg) { err.textContent = msg; err.style.display = 'block'; }
+
+  form.addEventListener('submit', function (e) {
+    e.preventDefault();
+    err.style.display = 'none';
+
+    if (!form.checkValidity()) {
+      var first = form.querySelector(':invalid');
+      if (first) { first.focus(); first.reportValidity && first.reportValidity(); }
+      return;
+    }
+
+    var data = new FormData(form);
+
+    // 空欄の項目は送らない（スパム誤判定を減らすため）
+    var empty = [];
+    data.forEach(function (v, k) { if (typeof v === 'string' && v.trim() === '') empty.push(k); });
+    empty.forEach(function (k) { data.delete(k); });
+
+    btn.disabled = true;
+    btn.textContent = '送信中…';
+
+    fetch(form.action, {
+      method: 'POST',
+      body: data,
+      headers: { 'Accept': 'application/json' }
+    }).then(function (res) {
+      if (res.ok) {
+        form.style.display = 'none';
+        document.querySelector('.summary').style.display = 'none';
+        thanks.style.display = 'block';
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      } else {
+        return res.json().then(function (j) {
+          var m = (j && j.errors) ? j.errors.map(function (x) { return x.message; }).join(' ') : '';
+          throw new Error(m);
+        });
+      }
+    }).catch(function (e2) {
+      showError('送信できませんでした。時間をおいて再度お試しいただくか、お手数ですがスケッチまで直接ご連絡ください。' + (e2 && e2.message ? '（' + e2.message + '）' : ''));
+      btn.disabled = false;
+      btn.textContent = label;
+    });
+  });
+})();
+</script>
+</body>
+</html>
